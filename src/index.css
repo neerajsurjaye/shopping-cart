@@ -84,6 +84,8 @@ body{
     margin-left: auto;
     cursor: pointer;
 
+    user-select: none;
+
 }
 
 
@@ -144,4 +146,15 @@ body{
     width: 70%;
     /* align-self: center; */
     margin: 0 auto;
+}
+
+/* routing  */
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.underline{
+    border-bottom: 2px solid black;
 }

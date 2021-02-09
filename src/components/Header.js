@@ -18,8 +18,8 @@ let Header = (props) => {
         return (
             <ul className="Nav">
                 <li><Link className={home} to="/">Home</Link></li>
-                <li><Link className={shop} to="/shop">Shop</Link></li>
-                <li>cart</li>
+                <li><Link className={shop} to="/shop">Shop </Link></li>
+                <li>Cart : {props.cart}</li>
             </ul>
         )
     }

@@ -112,7 +112,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 500;
 
+    text-transform: uppercase;
     
 }
 
@@ -155,6 +157,28 @@ body{
     color: black;
 }
 
+.link:hover{
+    
+    border-bottom: 2px solid #666;
+}
+
 .underline{
     border-bottom: 2px solid black;
+}
+
+/* home  */
+.main{
+    height: 100%;
+    /* width: 100%; */
+    /* background-color: rebeccapurple; */
+
+    margin-top: 150px;
+}
+
+
+.shopping-cart{
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    display: flex;
 }

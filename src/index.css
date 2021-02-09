@@ -49,6 +49,7 @@ body{
 
 .card > img{
     width: 100%;
+    box-shadow: inset 0px 0px 10px #666;
 }
 
 
@@ -196,17 +197,24 @@ body{
     margin-top: 50px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
-    padding: 15px 25px;
+    
     text-decoration: none;
     color: white;
+    cursor: pointer;
+    padding: 10px 15px;
     /* background-color: rebeccapurple; */
 }
 
 
+.btn-in{
+    border: 5px white solid;
+
+    padding: 10px 20px;
+}
+
 /* footer  */
 .footer{
-    position: fixed;
-    bottom: 0px;
+    
     width: 100%;
     display: flex;
     align-items: center;
@@ -214,10 +222,23 @@ body{
 
     background-color: black;
     color: white;
+    margin-top: 50px;
     padding: 15px 25px;
+
+    box-sizing: border-box;
+}
+
+.bottom{
+    position: fixed;
+    bottom: 0px;
+}
+
+.footer > div{
+    
 }
 
 .footer > h2{
     font-family: Arial, Helvetica, sans-serif;
+
     font-size: 2rem;
 }

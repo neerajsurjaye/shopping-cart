@@ -22,6 +22,7 @@ function App(props) {
           <ProdCard image={cardA} name="Card" price="34" quantity="34" cart={props.cart} setCart={props.setCart}></ProdCard>
         </div>
       </div>
+
     </div>
   );
 }

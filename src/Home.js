@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 let Home = (props) => {
-    console.log(props);
+
     let history = useHistory();
 
     let toShop = () => {
@@ -14,7 +14,7 @@ let Home = (props) => {
     }
 
     return <div className="home">
-        <Header path={props.location.pathname} cart={props.cart}></Header>
+        <Header path={props.location.pathname} items={props.items.length}></Header>
         <div className="main">
             <div className="shopping-cart">Shopping-cart</div>
             <div className="btn-shop" onClick={() => toShop()}>

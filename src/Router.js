@@ -2,16 +2,19 @@ import { Route, Switch, BrowserRouter } from "react-router-dom";
 import React, { useState } from "react";
 import Home from "./Home";
 import Shop from "./Shop";
+import Cart from "./Cart";
 
 let Router = () => {
-    let [cart, setCart] = useState(0);
+
+    let [items, setItems] = useState([]);
 
 
     return (
         <BrowserRouter>
             <Switch>
-                <Route exact path="/" component={(props) => <Home {...props} cart={cart} setCart={setCart}></Home>}></Route>
-                <Route exact path="/shop" component={(props) => <Shop {...props} cart={cart} setCart={setCart}></Shop>}></Route>
+                <Route exact path="/" component={(props) => <Home {...props} setItems={setItems} items={items}></Home>}></Route>
+                <Route exact path="/shop" component={(props) => <Shop {...props} setItems={setItems} items={items}></Shop>}></Route>
+                <Route exact path="/cart" component={(props) => <Cart {...props} setItems={setItems} items={items}></Cart>}></Route>
             </Switch >
         </BrowserRouter >
     )

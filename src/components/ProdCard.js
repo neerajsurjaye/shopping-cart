@@ -22,7 +22,7 @@ let ProdCard = (props) => {
         <div className="name">{props.name}</div>
         <div className="c-bottom">
             <div className="price">${props.price}</div>
-            <div className="add" onClick={() => { updateCart() }}>+</div>
+            <div className="add" onClick={() => { updateCart() }}>BUY</div>
         </div>
     </div >
 

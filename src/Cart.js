@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import Items from "./components/Items";
 
 
 let Cart = (props) => {
+    let [upd, setUpd] = useState(0);
+
     let genCards = (items) => {
         let cards = [];
+        console.log(items);
         for (let i = 0; i < items.length; i++) {
-            cards.push(<Items data={items[i]} ></Items >);
+            cards.push(<Items key={i} data={items[i]} index={i} items={props.items} setItems={props.setItems} upd={upd} setUpd={setUpd}></Items >);
         }
 
         return cards;

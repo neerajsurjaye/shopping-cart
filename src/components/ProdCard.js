@@ -10,7 +10,8 @@ let ProdCard = (props) => {
         props.setItems([...props.items, {
             name: props.name,
             img: props.image,
-            price: props.price
+            price: props.price,
+            quan: 1
         }])
     }
     // console.log("card", props);

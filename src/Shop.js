@@ -14,8 +14,8 @@ function App(props) {
       <Header path={props.location.pathname} items={props.items.length}></Header>
       <div className="body">
         <div className="h-card">
-          <ProdCard image={N1080ti} name="Card" price="34" quantity="34" setItems={props.setItems} items={props.items}></ProdCard>
-          <ProdCard image={N2080ti} name="Gpu" price="34" quantity="34" setItems={props.setItems} items={props.items}></ProdCard>
+          <ProdCard image={N1080ti} name="Nvidia 1080ti" price="34" quantity="34" setItems={props.setItems} items={props.items}></ProdCard>
+          <ProdCard image={N2080ti} name="Nvidia 2080ti" price="34" quantity="34" setItems={props.setItems} items={props.items}></ProdCard>
           <ProdCard image={N1080ti} name="Card" price="34" quantity="34" setItems={props.setItems} items={props.items}></ProdCard>
 
         </div>

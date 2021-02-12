@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -14,6 +15,13 @@ let ProdCard = (props) => {
             quan: 1
         }])
     }
+
+    let data = {
+        name: props.name,
+        img: props.image,
+        price: props.price,
+        setItems: props.setItems
+    }
     // console.log("card", props);
     return <div className="card">
 
@@ -24,6 +32,7 @@ let ProdCard = (props) => {
         <div className="c-bottom">
             <div className="price">${props.price}</div>
             <div className="add" onClick={() => { updateCart() }}>BUY</div>
+            <Link to={{ pathname: "/buypage", data: data }}>buypage</Link>
         </div>
     </div >
 

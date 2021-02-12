@@ -20,7 +20,8 @@ let ProdCard = (props) => {
         name: props.name,
         img: props.image,
         price: props.price,
-        setItems: props.setItems
+        setItems: props.setItems,
+        items: props.items
     }
     // console.log("card", props);
     return <div className="card">
@@ -31,8 +32,7 @@ let ProdCard = (props) => {
         <div className="name">{props.name}</div>
         <div className="c-bottom">
             <div className="price">${props.price}</div>
-            <div className="add" onClick={() => { updateCart() }}>BUY</div>
-            <Link to={{ pathname: "/buypage", data: data }}>buypage</Link>
+            <Link className="add" to={{ pathname: "/buypage", data: data }}>BUY</Link>
         </div>
     </div >
 

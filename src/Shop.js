@@ -18,6 +18,8 @@ function App(props) {
           <ProdCard image={N2080ti} name="Nvidia 2080ti" price="34" quantity="34" setItems={props.setItems} items={props.items}></ProdCard>
           <ProdCard image={N1080ti} name="Card" price="34" quantity="34" setItems={props.setItems} items={props.items}></ProdCard>
 
+
+
         </div>
       </div>
       <Footer></Footer>

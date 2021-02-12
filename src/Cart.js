@@ -19,6 +19,7 @@ let Cart = (props) => {
     return <div className="cart">
         <Header path={props.location.pathname} items={props.items.length}></Header>
         {genCards(props.items)}
+        <div className="btn-check">Proceed To Checkout</div>
     </div>
 }
 

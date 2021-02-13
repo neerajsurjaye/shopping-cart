@@ -3,7 +3,7 @@ import React from "react";
 
 let Items = (props) => {
 
-
+    //Romoves card
     let removeCard = (i) => {
 
         let tempItems = props.items;

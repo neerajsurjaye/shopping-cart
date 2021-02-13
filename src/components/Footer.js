@@ -1,8 +1,9 @@
 import React from "react";
 
-
+//Footer of page 
 let Footer = (props) => {
-    console.log(props.className ? "data " : "non");
+    // console.log(props.className ? "data " : "non");
+
 
     let cls = props.className ? props.className : " ";
 

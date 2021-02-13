@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 let Header = (props) => {
 
+    //Under according to path
     let links = (path) => {
         let home = "link ";
         let shop = "link ";

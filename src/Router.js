@@ -4,6 +4,7 @@ import Home from "./Home";
 import Shop from "./Shop";
 import Cart from "./Cart";
 import BuyPage from "./components/BuyPage"
+import Buy from "./components/Buy";
 
 let Router = () => {
 
@@ -17,6 +18,7 @@ let Router = () => {
                 <Route exact path="/shop" component={(props) => <Shop {...props} setItems={setItems} items={items}></Shop>}></Route>
                 <Route exact path="/cart" component={(props) => <Cart {...props} setItems={setItems} items={items}></Cart>}></Route>
                 <Route exact path="/buypage" component={BuyPage}></Route>
+                <Route exact path="/buy" component={Buy}></Route>
             </Switch >
         </BrowserRouter >
     )

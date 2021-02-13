@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 
 let ProdCard = (props) => {
-
+    //Legacy
     let updateCart = () => {
         props.setItems([...props.items, {
             name: props.name,
@@ -16,6 +16,7 @@ let ProdCard = (props) => {
         }])
     }
 
+    //Binds data into a object
     let data = {
         name: props.name,
         img: props.image,

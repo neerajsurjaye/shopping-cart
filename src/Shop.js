@@ -7,7 +7,7 @@ import N2080ti from "./Assets/2080ti.jpg"
 import Footer from "./components/Footer"
 
 function App(props) {
-  console.log("items upd : ", props.items);
+  // console.log("items upd : ", props.items);
 
   return (
     <div className="App">

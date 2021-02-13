@@ -3,9 +3,11 @@ import { Link, useHistory } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+//Home page
 let Home = (props) => {
 
     let history = useHistory();
+
 
     let toShop = () => {
 

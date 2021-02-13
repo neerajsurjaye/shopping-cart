@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import Header from "./components/Header";
 import Items from "./components/Items";
 
 
 let Cart = (props) => {
     let [upd, setUpd] = useState(0);
+    let history = useHistory();
 
     //Returns jsx total and price
     let calTotal = () => {
@@ -33,6 +35,12 @@ let Cart = (props) => {
     let genCards = (items) => {
         let cards = [];
         // console.log(items);
+        if (items.length == 0) {
+            return <div className="empty">
+                Empty Cart
+            </div>
+        }
+
         for (let i = 0; i < items.length; i++) {
             cards.push(<Items key={i} data={items[i]} index={i} items={props.items} setItems={props.setItems} upd={upd} setUpd={setUpd}></Items >);
         }
@@ -45,7 +53,7 @@ let Cart = (props) => {
         {calTotal()}
 
         {genCards(props.items)}
-        <div className="btn-check">Proceed To Checkout</div>
+        <div className="btn-check" onClick={() => { history.push("/buy") }}>Proceed To Checkout</div>
     </div>
 }
 

@@ -1,4 +1,4 @@
-import { Route, Switch, BrowserRouter } from "react-router-dom";
+import { Route, Switch, BrowserRouter, HashRouter } from "react-router-dom";
 import React, { useState } from "react";
 import Home from "./Home";
 import Shop from "./Shop";
@@ -12,7 +12,9 @@ let Router = () => {
 
 
     return (
-        <BrowserRouter>
+
+
+        <HashRouter basename="/">
             <Switch>
                 <Route exact path="/" component={(props) => <Home {...props} setItems={setItems} items={items}></Home>}></Route>
                 <Route exact path="/shop" component={(props) => <Shop {...props} setItems={setItems} items={items}></Shop>}></Route>
@@ -20,7 +22,7 @@ let Router = () => {
                 <Route exact path="/buypage" component={BuyPage}></Route>
                 <Route exact path="/buy" component={Buy}></Route>
             </Switch >
-        </BrowserRouter >
+        </HashRouter >
     )
 }
 

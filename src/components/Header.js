@@ -31,7 +31,7 @@ let Header = (props) => {
 
     return (
         <div className="header">
-            <div>Shopping-cart</div>
+            <div>Project:Shop</div>
             {links(props.path)}
         </div>
     )

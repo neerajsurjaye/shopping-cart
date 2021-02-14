@@ -151,6 +151,8 @@ body{
     width: 70%;
     /* align-self: center; */
     margin: 0 auto;
+
+    transition: all 0.2s;
 }
 
 /* routing  */
@@ -243,9 +245,7 @@ body{
     bottom: 0px;
 }
 
-.footer > div{
-    
-}
+
 
 .footer > h2{
     font-family: Arial, Helvetica, sans-serif;
@@ -346,6 +346,8 @@ body{
     font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
 
+    transition: all 0.2s;
+
 }
 
 .fi-total{
@@ -433,6 +435,7 @@ body{
 
 .buy-main{
     display: flex;
+    justify-content: center;
 }
 
 .buy-data{
@@ -576,4 +579,98 @@ body{
 
     margin: 15px;
     color: #ff0000;
+}
+
+
+@media (max-width:1080px){
+    .header{
+        flex-direction: column;
+    }
+
+    .header > div{
+        margin: 0;
+        margin-top: 15px;
+        align-self: center;
+    }
+
+    .header > ul{
+        margin-right: 25px;
+        margin-left: 0;
+        display: flex;
+    }
+
+    .header > ul > li{
+        margin: 10px;
+        flex-grow: 1;
+    }
+
+
+    .shopping-cart{
+        font-size: 3rem;
+    }
+
+
+    .footer > div{
+        display: none;
+    }
+
+    .h-card{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buy-card{
+        width: 90%;
+
+    }
+
+    .buy-main{
+        flex-direction: column;
+    }
+
+    .buy-main > img {
+        width: 70%;
+        align-self: center;
+    }
+
+
+    .buy-data{
+        padding-left: 25px;
+    }
+
+    .counter{
+        align-self: center;
+    }
+
+    .btn-buy{
+        width: 50%;
+        align-self: center;
+        margin: 25px;
+    }
+
+    .cart-card{
+        width: 90%;
+    }
+
+    .cart-body > img{
+        width: 40%;
+    }
+
+
+    .total{
+        width: 60%;
+    }
+
+    .cart-title{
+        width: 70%;
+    }
+
+
+    .final-page{
+        font-size: 3rem;
+        display: flex;
+    
+    }
 }

@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "./static/css/main.51022ed0.chunk.css",
+    "main.js": "./static/js/main.4aff27bf.chunk.js",
+    "main.js.map": "./static/js/main.4aff27bf.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.61a5ae16.js",
+    "runtime-main.js.map": "./static/js/runtime-main.61a5ae16.js.map",
+    "static/js/2.b920fdba.chunk.js": "./static/js/2.b920fdba.chunk.js",
+    "static/js/2.b920fdba.chunk.js.map": "./static/js/2.b920fdba.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.51022ed0.chunk.css.map": "./static/css/main.51022ed0.chunk.css.map",
+    "static/js/2.b920fdba.chunk.js.LICENSE.txt": "./static/js/2.b920fdba.chunk.js.LICENSE.txt",
+    "static/media/1080ti.f62df1b0.jpg": "./static/media/1080ti.f62df1b0.jpg",
+    "static/media/2080ti.9255af21.jpg": "./static/media/2080ti.9255af21.jpg",
+    "static/media/Amd5700.d7848b7d.jpg": "./static/media/Amd5700.d7848b7d.jpg",
+    "static/media/i7.7b6ef51d.jpg": "./static/media/i7.7b6ef51d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.61a5ae16.js",
+    "static/js/2.b920fdba.chunk.js",
+    "static/css/main.51022ed0.chunk.css",
+    "static/js/main.4aff27bf.chunk.js"
+  ]
+}
